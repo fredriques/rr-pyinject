@@ -5,6 +5,11 @@ requires = [
 ]
 build-backend = "setuptools.build.meta"
 
+[tool.pytest.ini_options]
+pythonpath = [
+    "./src"
+]
+
 [tool.setuptools.packages.find]
 where = ["src/"]
 include = ["rr"]

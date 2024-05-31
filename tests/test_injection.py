@@ -1,5 +1,4 @@
 import unittest
-
 from rr.inject import injectable, inject, print_injectables, is_injectable
 
 

@@ -1,10 +1,10 @@
-[project]
-name = "rr-inject"
-version = "0.1.0"
-description = ""
-authors = []
-readme = "README.md"
-packages = [{include = "rr", from = "src"}]
+[build-system]
+requires = [
+    "setuptools >= 42",
+    "wheel"
+]
+build-backend = "setuptools.build.meta"
 
-dependencies = []
-requires-python = ">= 3.8"
+[tool.setuptools.packages.find]
+where = ["src/"]
+include = ["rr"]

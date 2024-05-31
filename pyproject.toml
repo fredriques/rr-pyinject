@@ -9,7 +9,3 @@ build-backend = "setuptools.build.meta"
 pythonpath = [
     "./src"
 ]
-
-[tool.setuptools.packages.find]
-where = ["src/"]
-include = ["rr"]

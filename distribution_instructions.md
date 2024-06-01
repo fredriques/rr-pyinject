@@ -11,4 +11,7 @@ python setup.py sdist bdist_wheel
 python -m pip install .\dist\rr_inject-0.1.0-py3-none-any.whl --forc
 ```
 
-#publich 
+# Publish to PyPi 
+```commandline
+twine upload dist/*
+```

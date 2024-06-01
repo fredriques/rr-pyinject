@@ -10,6 +10,12 @@ constructor or method with this decorator is invoked the arguments are inspected
 find any named argument that the callable allows, but is not in the argument list. The missing
 values are then replaced with values registered as an injectable.
 
+# Installation
+
+```commandline
+pip install rr-inject
+```
+
 # Basic Usage
 
 ```python

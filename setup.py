@@ -8,7 +8,7 @@ setuptools.setup(
     license='MIT',
     description="Dependency Injection library for Python using decorators.",
     long_description=pathlib.Path('README.md').read_text(),
-    long_description_content_type="test/markdown",
+    long_description_content_type="text/markdown",
     url="https://github.com/fredriques/rr-pyinject",
     author="Fredrique Samuels",
     project_urls={
@@ -17,11 +17,11 @@ setuptools.setup(
         "Health": "https://github.com/fredriques/rr-pyinject/actions",
     },
     classifiers=[
-        "Development State :: Alpha",
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.11",
-        "Topic :: Utilities :: Injection"
+        "Topic :: Utilities"
     ],
     python_requires=">=3.8,<3.12",
     install_requires=[],

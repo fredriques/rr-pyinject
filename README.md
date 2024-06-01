@@ -69,7 +69,7 @@ inst = MyService()
 register_injectable("my_service", lambda: inst)
 ```
 
-# Downside of using the @inject decorator
+# Kwargs only with @inject
 
 The only downside is that callables marked with `@inject` cannot be invoked
 with positional arguments, if you do you will get an error. All arguments must be

@@ -4,11 +4,11 @@ Dependency Injection library for Python using decorators.
 
 # Description
 
-This library attempts to simply injection of dependencies into function, constructor and method
+This library attempts to simply injection of dependencies into functions, constructors and methods
 with minimal overhead during coding. This is done using the decorator @inject. When the function, 
 constructor or method with this decorator is invoked the arguments are inspected to 
-find any named argument that the callable allows, but is not being passed in as arguments. The missing
-values are then replaced with values registered as injectables.
+find any named argument that the callable allows, but is not in the argument list. The missing
+values are then replaced with values registered as an injectable.
 
 # Basic Usage
 

@@ -12,31 +12,31 @@ values are then replaced with values registered as injectables.
 
 # Basic Usage
 
-Mark the class type as injectable using the decorator.
-
 ```python
+from rr.inject import inject, injectable
 
+# Mark the class type as injectable using the decorator.
 @injectable(name="my_service")
 class MyService:
     pass
-```
 
-Register an instance of the decorated class. No need to keep a reference 
-since it will be held in the cache.
-
-```python
+# Register an instance of the decorated class. No need to keep a reference 
+# since it will be held in the cache.
 MyService()
-```
 
-To receive the registered object as an argument simply use the name
-used to register the object as the parameter name and default it to `None`
-
-```python
+# To receive the registered object as an argument simply use the name
+# used to register the object as the parameter name and default it to `None`
 @inject
 def demo(my_service: MyService = None):
     print(my_service)
-```
 
+demo()
+```
+Output
+
+```commandline
+<__main__.MyService object at 0x000001780FBA0E20>
+```
 
 # Alternatives to using @injectable
 

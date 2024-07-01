@@ -1,4 +1,4 @@
-from rr.inject import inject, injectable
+from rr_inject import inject, injectable
 
 
 # Mark the class type as injectable using the decorator.

@@ -1,6 +1,6 @@
 import unittest
 
-from rr.inject import injectable, inject, injectable_get, injection_clear_cache, \
+from rr_inject import injectable, inject, injectable_get, injection_clear_cache, \
     register_injectable
 
 
